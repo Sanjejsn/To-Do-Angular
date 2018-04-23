@@ -1,0 +1,21 @@
+.task-filters {
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+  li:not(:first-child):before {
+    padding-left:12px;
+    content: "/";
+    padding-right:12px;
+    font-weight: 300;
+  }
+
+  .active {
+      color: white;
+  }

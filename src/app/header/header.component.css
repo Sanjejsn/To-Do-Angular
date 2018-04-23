@@ -1,0 +1,33 @@
+.header {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 80% 20%;
+
+}
+
+.header-title {
+    align-self: end;    
+}
+
+
+.header-links {
+    justify-self: end;
+
+}
+
+.header-link {
+    font-size: 28px;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+

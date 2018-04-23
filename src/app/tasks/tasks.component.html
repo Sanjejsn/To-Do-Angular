@@ -1,0 +1,17 @@
+<app-task-form (createTask)="onCreatedTask($event)"></app-task-form>
+
+<ul class="task-filters">
+    <li>
+        <a [class.active]="status === 'all'" (click)="onAll()">View All</a>
+    </li>
+    <li>
+        <a [class.active]="status === 'started'" (click)="onStarted()">Active</a>
+
+    </li>
+    <li>
+        <a [class.active]="status === 'completed'" (click)="onComplited()">Completed</a>
+
+    </li>
+</ul>
+
+<app-task-item *ngFor="let task of tasks | filter : status ; let i = index" [newTask]="task" (delete)="onDelete($event, i)"></app-task-item>

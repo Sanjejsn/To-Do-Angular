@@ -1,0 +1,20 @@
+<div class="task-item">
+
+  <button *ngIf="!editing" class="task-item-button" (click)="isDone()">
+    <i [ngClass]="{'task-completed': newTask.completed }" class=" fa fa-check"></i>
+  </button>
+
+  <div class="task-item-title" *ngIf="!editing" [ngClass]="{'done': newTask.completed }" (click)="startEditing()">
+    {{ newTask.title }}
+  </div>
+
+  <div class="item-input" *ngIf="editing">
+    <input class="task-item-input" type="text" [(ngModel)]="title" (keydown.enter)="stopEditing()" (click)="stopEditing()" (blur)="stopEditing()"
+      appMyAutoFocus>
+  </div>
+
+  <button class="task-item-button" (click)="handleClick($event)">
+    <i class="fa fa-trash" aria-hidden="true"></i>
+  </button>
+
+</div>
