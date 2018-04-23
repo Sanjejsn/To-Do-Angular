@@ -1,6 +1,8 @@
-# ToDoAppAngularWithFirebase
+# ToDoAppAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+
+[View Demo](https://to-do-angular-98bb5.firebaseapp.com/)
 
 ## Development server
 
